@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- volkhob google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Tour package details</title>
+    <style>
+        .volkhov-regular {
+            font-family: "Volkhov", serif;
+            font-weight: 400;
+        }
+    </style>
+
+<body>
+    <!-- navbar section start from here -->
+    <nav>
+        <div class="navbar bg-transparent backdrop-blur px-4 md:px-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a class="font-semibold">Hotels</a></li>
+                        <li><a class="font-semibold">Flight</a></li>
+                        <li><a class="font-semibold">Tour</a></li>
+                        <li><a class="font-semibold">Visa</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl"><img src="image/Bhubanmajhi_Logo.png" alt="Bhuban Majhi Travel Logo"
+                        class="lg:w-28 w-20"></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-semibold">Hotels</a></li>
+                    <li><a class="font-semibold">Flight</a></li>
+                    <li><a class="font-semibold">Tour</a></li>
+                    <li><a class="font-semibold">Visa</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#1E2022] font-semibold text-white border-none">Sign In</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <div class="container mx-auto max-w-6xl px-4 py-8">
+        <!-- Header -->
+        <div class="mb-6">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2 volkhov-regular">Sea Pearl Beach Resort & Spa Cox's Bazar
+            </h1>
+            <p class="text-gray-500 text-sm">📍 Inforamani, Inani, main Cox's Bazar, Bangladesh</p>
+        </div>
+
+        <div class="sm:flex justify-between gap-10 items-center mx-auto">
+            <!-- Image Gallery -->
+            <div class="grid sm:grid-cols-6 grid-cols-1 gap-4 mb-8">
+                <!-- Main Image -->
+                <div class="col-span-6 relative h-[400px]">
+                    <img src="image/Popular Destinations (4).jfif" alt="Tour Location"
+                        class="w-full h-full object-cover rounded-lg" />
+                </div>
+                <!-- Thumbnail Images -->
+                <div class="sm:col-span-6 col-span-1 flex gap-4 h-24">
+                    <img src="image/Popular Destinations (2).jfif" alt="Thumbnail 1"
+                        class="w-28 h-28 object-cover rounded cursor-pointer" />
+                    <img src="image/Popular Destinations (3).jfif" alt="Thumbnail 2"
+                        class="w-28 h-28 object-cover rounded cursor-pointer" />
+                    <img src="image/Popular Destinations (3).jfif" alt="Thumbnail 3"
+                        class="w-28 h-28 object-cover rounded cursor-pointer" />
+                    <div class="hidden lg:block">
+
+                        <div class="flex gap-4 h-24">
+
+                            <img src="image/Popular Destinations (3).jfif" alt="Thumbnail 4"
+                                class="w-28 h-28 object-cover rounded cursor-pointer " />
+                            <img src="image/Popular Destinations (3).jfif" alt="Thumbnail 4"
+                                class="w-28 h-28 object-cover rounded cursor-pointer " />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Right Sidebar -->
+            <div class="col-span-4">
+                <div class="bg-white rounded-lg border border-gray-100 py-24 p-6 shadow-xl">
+                    <!-- Call Icon -->
+                    <div class="flex justify-center mb-4">
+                        <div class="w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#3cc]" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-6">
+                        <h3 class="font-medium mb-2 volkhov-regular">Call For Bookings</h3>
+                        <a href="tel:+8801234567890" class="text-[#3cc] volkhov-regular">+880 1234 567 890</a>
+                    </div>
+                </div>
+                <div class="space-y-4 mt-10">
+                    <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 flex-shrink-0" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div>
+                            <h4 class="font-medium mb-1">Free Cancellation</h4>
+                            <p class="text-sm text-gray-600">Cancel up to 24h before to receive a full refund
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 flex-shrink-0" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <div class="pb-5">
+                            <h4 class="font-medium mb-1">Instant Confirmation</h4>
+                            <p class="text-sm text-gray-600">We'll let you know if the tour is available right
+                                away!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-12 gap-8">
+            <!-- Left Content -->
+            <div class="col-span-8">
+                <div class="bg-white rounded-lg">
+                    <h2 class="text-xl font-semibold mb-4 volkhov-regular">Description</h2>
+                    <div class="space-y-4 text-gray-600">
+                        <p>Escape to the world's longest sea beach with our carefully curated 2 Days, 1 Night Cox's
+                            Bazar Tour Package. Perfect for a quick getaway, this package promises relaxation,
+                            adventure, and an unforgettable immersed by its stunning sea views.</p>
+                        <p>This package includes comfortable accommodation, delicious meals, and personalized
+                            services to ensure a seamless experience. Whether you're traveling solo, with family, or
+                            as a couple, our tour offers the perfect blend of leisure and exploration in this
+                            coastal paradise.</p>
+                        <p>Book your getaway today and let Cox's Bazar rejuvenate your mind and soul!</p>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <hr><br>
+
+        <div class="border-2 p-10 rounded-2xl md:flex   justify-center items-center gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Location</p>
+                    <select class="select w-full border-gray-300">
+                        <option>New York, USA</option>
+                        <option>London, UK</option>
+                        <option>Paris, France</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Check In</p>
+                    <input type="date" class="input input-bordered" />
+                </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Check Out</p>
+                    <input type="date" class="input input-bordered" />
+                </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Rooms & Guest</p>
+                    <select class="select select-bordered w-full">
+                        <option>1 Room, 1 adults</option>
+                        <option>1 Room, 1 adults, 1 child</option>
+                        <option>1 Room, 2 adults</option>
+                        <option>2 Room, 4 adults</option>
+                        <option>3 Room, 6 adults</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-actions justify-end ">
+                <button class="btn btn-lg btn-neutral mx-auto md:mt-0 mt-3"> <i
+                        class="fa-solid fa-magnifying-glass text-white"></i>
+                    Search</button>
+            </div>
+        </div><br>
+        <hr><br>
+        <div class="max-w-6xl p-6 mx-auto space-y-8">
+            <!-- No Rooms Available Alert -->
+            <div class="bg-gray-50 p-3 rounded-xl flex   border-2 py-16 ">
+                <span class="text-gray-700 font-semibold">Room Details</span>
+            </div>
+
+            <!-- What's Nearby Section -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">What's Nearby</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Interest Points -->
+                    <div class="space-y-4">
+                        <h3 class="font-medium text-gray-700">Interest Points</h3>
+                        <ul class="list-disc space-y-2 text-gray-600 pl-10">
+                            <li>0.65 km from Laboni Point Sea Beach</li>
+                            <li>1.3 km from Sugondha Sea Beach</li>
+                            <li>2.5 km from Kolatoli Beach, Cox's Bazar</li>
+                            <li>3 km from burmese Bazaar</li>
+                        </ul>
+                    </div>
+
+                    <!-- Nearby Terminals -->
+                    <div class="space-y-4">
+                        <h3 class="font-medium text-gray-700">Nearby Terminals</h3>
+                        <ul class="list-disc space-y-2 text-gray-600 pl-10">
+                            <li>3.1 km from Cox's Bazar Airport</li>
+                            <li>1.9 km from Kolatoli Bus Stand</li>
+                            <li>6.5 km from Cox's Bazar Railway Station</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Most Popular Facilities -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">Most Popular Facilities</h2>
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                        </svg>
+                        <span>Free WiFi</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                        </svg>
+                        <span>Restaurant</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span>Room service</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>24-hour front desk</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                        </svg>
+                        <span>Free parking</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span>Family rooms</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- House Rules -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">House Rules</h2>
+
+                <div class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex gap-10">
+
+                            <p class="font-medium text-gray-700">Check-In :</p>
+                            <p class="text-gray-600">Available 24 Hours</p>
+                        </div>
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Check-Out :</p>
+                            <p class="text-gray-600">From 11:00 To 12:00</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 flex gap-10">
+                        <p class="font-medium text-gray-700 text-nowrap">Instructions :</p>
+                        <ul class="list-disc ml-5 space-y-2 text-gray-600 pl-10">
+                            <li>Extra-Person Charges May Apply And Vary Depending On Property Policy</li>
+                            <li>Government-Issued Photo Identification And A Credit Card, Debit Card, Or Cash Deposit
+                                May Be Required At Check-In For Incidental Charges</li>
+                            <li>Special Requests Are Subject To Availability Upon Check-in And May Incur Additional
+                                Charges; Special Requests Cannot Be Guaranteed</li>
+                            <li>This Property Accepts Credit Cards, Debit Cards, And Cash</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2 ">
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700 whitespace-nowrap">Child Policy :</p>
+                            <div>
+                                <p class="text-gray-600">Allowed</p>
+                                <ul class="list-disc ml-5 space-y-2 text-gray-600 pl-10">
+                                    <li>Children Below 5 Years Can Stay In The Same Room & Enjoy Complimentary
+                                        Breakfast.</li>
+                                    <li>Children Above 5 Years To 10 Years Will Be Charged BDT 1000/- For Buffet
+                                        Breakfast, BDT
+                                        1200/- For Buffet Lunch & BDT 1450/- For Buffet Dinner.</li>
+                                    <li>For An Extra Bed Need To Pay BDT 3,000/- And Breakfast Is Included With This
+                                        Price.</li>
+                                    <li>Children Above 10 Years Are Considered Adults And An Extra Bed Shall Be
+                                        Required.</li>
+                                    <li>Adult Breakfast Charge BDT 1,999/-</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Pets :</p>
+                            <p class="text-gray-600">Not Allowed</p>
+                        </div>
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Parties :</p>
+                            <p class="text-gray-600">Not Allowed</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-10">
+                        <p class="font-medium text-gray-700">Property Accepts :</p>
+                        <p class="text-gray-600">This Property Only Accepts Cash Payments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-[#15253E] text-gray-300 py-12 mx-auto">
+        <div class="container mx-auto  px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Language & Currency Section -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-white mb-3">Language</h3>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-[#1C2E4A] text-gray-300 py-2 px-3 pr-8 rounded appearance-none focus:outline-none">
+                                <option>🇬🇧 English (UK)</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white mb-3">Currency</h3>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-[#1C2E4A] text-gray-300 py-2 px-3 pr-8 rounded appearance-none focus:outline-none">
+                                <option>BDT</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Section -->
+                <div>
+                    <h3 class="text-white mb-3">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white">Terms and conditions</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+                        <li><a href="#" class="hover:text-white">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Need Help Section -->
+                <div>
+                    <h3 class="text-white mb-3">Need Help?</h3>
+                    <p class="text-sm">We're here for you 24/7! Reach out to us through Messenger or call anytime,
+                        day
+                        or night, for the support you need.</p>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-white mb-3">Contact</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li>info@agencyYNam.com</li>
+                        <li>+880 XXXXXXXXX</li>
+                    </ul>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-[#1877F2] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#1DA1F2] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#E4405F] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#E60023] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0a12 12 0 0 0-4.373 23.178c-.067-.595-.123-1.508.026-2.158.136-.592.878-3.764.878-3.764s-.224-.448-.224-1.11c0-1.041.604-1.82 1.357-1.82.639 0 .948.48.948 1.055 0 .642-.409 1.603-.62 2.493-.176.743.374 1.348 1.111 1.348 1.333 0 2.357-1.407 2.357-3.44 0-1.798-1.293-3.053-3.138-3.053-2.137 0-3.396 1.602-3.396 3.258 0 .645.249 1.335.558 1.715.061.074.07.14.052.268l-.207.818c-.033.123-.108.15-.25.09-0.93-.428-1.514-1.77-1.514-2.854 0-2.368 1.72-4.545 4.962-4.545 2.606 0 4.627 1.86 4.627 4.34 0 2.595-1.636 4.68-3.907 4.68-.764 0-1.483-.396-1.73-.867l-.47 1.794c-.171.657-.632 1.48-.942 1.983A12.002 12.002 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Copyright -->
+    <div class=" bg-[#0c1624] p-5 text-gray-100 w-full text-center text-sm items-center">
+        <p>Copyright 2025 Bhuban Majhi. All Rights Reserved</p>
+    </div>
+    </div>
+</body>
+
+</html>
