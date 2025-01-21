@@ -66,7 +66,7 @@
     <div class="container mx-auto max-w-6xl px-4 py-8">
         <!-- Header -->
         <div class="mb-6">
-            <h1 class="text-2xl font-bold text-gray-800 mb-2 volkhov-regular">Cox's Bazar Tour Package 2 days 1 night
+            <h1 class="text-2xl font-bold text-gray-800 mb-2 volkhov-regular">Sea Pearl Beach Resort & Spa Cox's Bazar
             </h1>
             <p class="text-gray-500 text-sm">📍 Inforamani, Inani, main Cox's Bazar, Bangladesh</p>
         </div>
@@ -168,201 +168,204 @@
             </div>
         </div><br>
         <hr><br>
-    </div>
 
-    <!-- activity -->
-    <div class=" container mx-auto max-w-6xl px-4 ">
-        <!-- Activity Section -->
-        <div class="space-y-4">
-            <h2 class="text-xl font-semibold text-gray-800 volkhov-regular">Activity</h2>
-
-            <div class="space-y-2">
-                <h3 class="text-base font-medium text-gray-700 volkhov-regular">What You Will Do</h3>
-
-                <!-- Day 1 -->
-                <div class="ml-4 space-y-2">
-                    <p class="font-medium text-gray-700">Day 1:</p>
-                    <ul class="ml-4 space-y-2 list-disc text-gray-600">
-                        <li>Arrival and check-in at a premium beachfront resort.</li>
-                        <li>Explore Cox's Bazar beach and enjoy the mesmerizing sunset.</li>
-                        <li>Dinner featuring local delicacies at a seaside restaurant.</li>
-                    </ul>
+        <div class="border-2 p-10 rounded-2xl md:flex   justify-center items-center gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Location</p>
+                    <select class="select w-full border-gray-300">
+                        <option>New York, USA</option>
+                        <option>London, UK</option>
+                        <option>Paris, France</option>
+                    </select>
                 </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Check In</p>
+                    <input type="date" class="input input-bordered" />
+                </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Check Out</p>
+                    <input type="date" class="input input-bordered" />
+                </div>
+                <div class="form-control">
+                    <p class="text-sm text-left p-2">Rooms & Guest</p>
+                    <select class="select select-bordered w-full">
+                        <option>1 Room, 1 adults</option>
+                        <option>1 Room, 1 adults, 1 child</option>
+                        <option>1 Room, 2 adults</option>
+                        <option>2 Room, 4 adults</option>
+                        <option>3 Room, 6 adults</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-actions justify-end ">
+                <button class="btn btn-lg btn-neutral mx-auto md:mt-0 mt-3"> <i
+                        class="fa-solid fa-magnifying-glass text-white"></i>
+                    Search</button>
+            </div>
+        </div><br>
+        <hr><br>
+        <div class="max-w-6xl p-6 mx-auto space-y-8">
+            <!-- No Rooms Available Alert -->
+            <div class="bg-gray-50 p-4 rounded-lg flex items-center gap-2 border-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="text-gray-700">No rooms available on your selected dates.</span>
+            </div>
 
-                <!-- Day 2 -->
-                <div class="ml-4 space-y-2 mt-4">
-                    <p class="font-medium text-gray-700">Day 2:</p>
-                    <ul class="ml-4 space-y-2 list-disc text-gray-600">
-                        <li>Early morning stroll along the beach or a sunrise view.</li>
-                        <li>Visit nearby attractions such as Himchari Waterfall and Inani Beach.</li>
-                        <li>Breakfast at the resort and free time for relaxation or souvenir shopping.</li>
-                        <li>Departure with cherished memories.</li>
-                    </ul>
+            <!-- What's Nearby Section -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">What's Nearby</h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Interest Points -->
+                    <div class="space-y-4">
+                        <h3 class="font-medium text-gray-700">Interest Points</h3>
+                        <ul class="list-disc space-y-2 text-gray-600 pl-10">
+                            <li>0.65 km from Laboni Point Sea Beach</li>
+                            <li>1.3 km from Sugondha Sea Beach</li>
+                            <li>2.5 km from Kolatoli Beach, Cox's Bazar</li>
+                            <li>3 km from burmese Bazaar</li>
+                        </ul>
+                    </div>
+
+                    <!-- Nearby Terminals -->
+                    <div class="space-y-4">
+                        <h3 class="font-medium text-gray-700">Nearby Terminals</h3>
+                        <ul class="list-disc space-y-2 text-gray-600 pl-10">
+                            <li>3.1 km from Cox's Bazar Airport</li>
+                            <li>1.9 km from Kolatoli Bus Stand</li>
+                            <li>6.5 km from Cox's Bazar Railway Station</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Most Popular Facilities -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">Most Popular Facilities</h2>
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                        </svg>
+                        <span>Free WiFi</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                        </svg>
+                        <span>Restaurant</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                        <span>Room service</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>24-hour front desk</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+                        </svg>
+                        <span>Free parking</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <span>Family rooms</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- House Rules -->
+            <div class="space-y-6">
+                <h2 class="text-xl font-semibold text-gray-800">House Rules</h2>
+
+                <div class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex gap-10">
+
+                            <p class="font-medium text-gray-700">Check-In :</p>
+                            <p class="text-gray-600">Available 24 Hours</p>
+                        </div>
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Check-Out :</p>
+                            <p class="text-gray-600">From 11:00 To 12:00</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 flex gap-10">
+                        <p class="font-medium text-gray-700 text-nowrap">Instructions :</p>
+                        <ul class="list-disc ml-5 space-y-2 text-gray-600 pl-10">
+                            <li>Extra-Person Charges May Apply And Vary Depending On Property Policy</li>
+                            <li>Government-Issued Photo Identification And A Credit Card, Debit Card, Or Cash Deposit
+                                May Be Required At Check-In For Incidental Charges</li>
+                            <li>Special Requests Are Subject To Availability Upon Check-in And May Incur Additional
+                                Charges; Special Requests Cannot Be Guaranteed</li>
+                            <li>This Property Accepts Credit Cards, Debit Cards, And Cash</li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-2 ">
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700 whitespace-nowrap">Child Policy :</p>
+                            <div>
+                                <p class="text-gray-600">Allowed</p>
+                                <ul class="list-disc ml-5 space-y-2 text-gray-600 pl-10">
+                                    <li>Children Below 5 Years Can Stay In The Same Room & Enjoy Complimentary
+                                        Breakfast.</li>
+                                    <li>Children Above 5 Years To 10 Years Will Be Charged BDT 1000/- For Buffet
+                                        Breakfast, BDT
+                                        1200/- For Buffet Lunch & BDT 1450/- For Buffet Dinner.</li>
+                                    <li>For An Extra Bed Need To Pay BDT 3,000/- And Breakfast Is Included With This
+                                        Price.</li>
+                                    <li>Children Above 10 Years Are Considered Adults And An Extra Bed Shall Be
+                                        Required.</li>
+                                    <li>Adult Breakfast Charge BDT 1,999/-</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Pets :</p>
+                            <p class="text-gray-600">Not Allowed</p>
+                        </div>
+                        <div class="flex gap-10">
+                            <p class="font-medium text-gray-700">Parties :</p>
+                            <p class="text-gray-600">Not Allowed</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-10">
+                        <p class="font-medium text-gray-700">Property Accepts :</p>
+                        <p class="text-gray-600">This Property Only Accepts Cash Payments.</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Details Section -->
-        <div class="space-y-4 pt-4">
-            <h2 class="text-xl font-semibold text-gray-800 volkhov-regular">Details</h2>
-
-            <!-- Language, Duration, Number of People -->
-            <div class="grid grid-cols-3 gap-4">
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-700 volkhov-regular">Language</p>
-                    <ul class="space-y-1">
-                        <li class="flex items-center gap-2">
-                            <input type="radio" checked class="radio radio-sm" name="language" />
-                            <span class="text-gray-600 ">English</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <input type="radio" class="radio radio-sm" name="language" />
-                            <span class="text-gray-600">Bangla</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-700 volkhov-regular">Duration</p>
-                    <div class="flex items-center gap-2">
-                        <input type="radio" checked class="radio radio-sm" name="duration" />
-                        <span class="text-gray-600">2 hours</span>
-                    </div>
-                </div>
-
-                <div class="space-y-2">
-                    <p class="font-medium text-gray-700 volkhov-regular">Number Of People</p>
-                    <div class="flex items-center gap-2">
-                        <input type="radio" checked class="radio radio-sm" name="people" />
-                        <span class="text-gray-600">5 People</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Meeting Point Address -->
-            <div class="space-y-2 pb-4">
-                <p class="font-semibold text-gray-700 volkhov-regular ">Meeting Point Address</p>
-                <p class="text-gray-600">Meet your guide inside the west entrance of Altab Ali Park (Whitechapel Road).
-                    It's opposite the entrance to Aldgate East Tube Station and the Whitechapel Gallery. Look for a
-                    guide wearing SMT attire and holding a red SMT flag</p>
-            </div>
-            <hr><br>
-            <!-- Popular Tour Packages -->
-            <div class="container mx-auto px-4 py-16">
-                <div class="flex justify-between items-center mb-8">
-                    <div>
-                        <h2 class="text-2xl font-bold mb-3 volkhov-regular">Related tours in Cox’s Bazar</h2>
-
-                    </div>
-                    <div>
-                        <div class="flex gap-2">
-                            <button class="btn btn-circle btn-sm">❮</button>
-                            <button class="btn btn-circle btn-sm">❯</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Rest of the tour packages section remains the same -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Tour Card 1 -->
-                    <div class=" flex bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
-                        <div class="relative h-48">
-                            <img src="image/Hotel.png" alt="Sajek View" class="w-full h-48 object-cover" />
-                        </div>
-                        <div class="p-4">
-                            <h2 class="text-lg font-semibold mb-3 volkhov-regular">Cox’s - Group Tour</h2>
-                            <div class="space-y-2 text-gray-600 text-sm mb-4">
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    </svg>
-                                    <span>Sajek</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span>Duration 2 Days</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                                    </svg>
-                                    <span>From 2 to 24 People</span>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold volkhov-regular">BDT 2,480</span>
-                                <span class="text-gray-500 text-sm"> per person</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tour Card 2 -->
-                    <div class=" flex bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
-                        <div class="relative h-48">
-                            <img src="image/Hotel.png" alt="Sajek View" class="w-full h-48 object-cover" />
-                        </div>
-                        <div class="p-4">
-                            <h2 class="text-lg font-semibold mb-3 volkhov-regular">Cox’s - Group Tour</h2>
-                            <div class="space-y-2 text-gray-600 text-sm mb-4">
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    </svg>
-                                    <span>Sajek</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span>Duration 2 Days</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                                        viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                                    </svg>
-                                    <span>From 2 to 24 People</span>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold volkhov-regular">BDT 2,480</span>
-                                <span class="text-gray-500 text-sm"> per person</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Footer -->
     <footer class="bg-[#15253E] text-gray-300 py-12 mx-auto">
         <div class="container mx-auto  px-4">
