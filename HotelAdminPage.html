@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- volkhob google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Hotel admin edit</title>
+    <style>
+        .volkhov-regular {
+            font-family: "Volkhov", serif;
+            font-weight: 400;
+        }
+    </style>
+
+<body>
+    <!-- navbar  -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl"><img src="image/Bhubanmajhi_Logo.png" alt=""
+                    class="w-[100px] sm:mr-32 mr-10"></a>
+            <input type="text" placeholder=" Search" class="input input-bordered w-24 md:w-auto rounded-full " />
+        </div>
+        <div class=" gap-5 px-5">
+            <div class="w-10">
+                <img class="rounded-full" alt="Tailwind CSS Navbar component"
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+            <div>
+                <h2 class="text-base font-semibold ">Name </h2>
+                <p class="text-sm font-semibold ">Admin</p>
+            </div>
+        </div>
+    </div>
+    <!-- nav end -->
+
+    <div class="flex h-screen">
+        <aside class="w-64">
+            <div class="p-4">
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Dashboard</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Tour Packages</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Flight Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 bg-gray-100">
+                    <span>Hotel Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Visa Requests</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>To-Do</span>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 w-64 border-t">
+                <div class="p-4">
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Settings</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8">
+            <div class="flex justify-between">
+                <h1 class="text-3xl font-bold"><i class="fa-solid fa-arrow-left"></i> Available Hotels</h1>
+                <button class="btn bg-black text-white gap-2">
+                    <span class="text-lg">+</span>
+                    Available Hotels
+                </button>
+            </div>
+            <div>
+                <!-- CARD 1 -->
+                <div class=" mx-auto my-5">
+                    <div
+                        class="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                        <!-- Image Container -->
+                        <div class="md:w-72 w-full h-72 relative p-6">
+                            <img src="image/hotel 3.jfif" alt="Cox's Bazaar Resort Pool View"
+                                class="w-full h-full object-cover rounded-xl" />
+                        </div>
+
+                        <!-- Content Container -->
+                        <div class="flex-1 p-8 pt-12">
+                            <div class="flex justify-between items-start ">
+                                <div class="space-y-2">
+                                    <h2 class="text-xl font-semibold text-gray-800 volkhov-regular">Cox's Bazaar Resort
+                                    </h2>
+                                    <p class="text-sm text-gray-600 flex items-center gap-1">
+                                        <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        400 m from beach
+                                    </p>
+                                    <p class="text-sm font-medium">Standard Quadruple Room</p>
+                                    <p class="text-sm text-gray-600">2 double beds</p>
+                                </div>
+
+                                <div class="text-right space-y-1">
+                                    <a href="tel:+8801234567890"
+                                        class="text-sm text-teal-500 hover:text-teal-600 flex items-center justify-end gap-1 volkhov-regular">
+                                        Contact Us : +880 1234567890
+                                    </a>
+                                    <div class="mt-4 pt-10">
+                                        <p class="text-sm text-gray-600">Starts from</p>
+                                        <p class="text-xl font-semibold volkhov-regular ">BDT 4,0000</p>
+                                        <p class="text-sm text-gray-600">1 night, per room</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-sm text-green-500 ">Breakfast included</p>
+                                    <p class="text-sm text-red-500 font-semibold">Only 3 rooms left at this price on our
+                                        site</p>
+                                </div>
+                                <div>
+                                    <button class="btn bg-black text-white mt-5">Edit Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class=" mx-auto my-5">
+                    <div
+                        class="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                        <!-- Image Container -->
+                        <div class="md:w-72 w-full h-72 relative p-6">
+                            <img src="image/hotel 3.jfif" alt="Cox's Bazaar Resort Pool View"
+                                class="w-full h-full object-cover rounded-xl" />
+                        </div>
+
+                        <!-- Content Container -->
+                        <div class="flex-1 p-8 pt-12">
+                            <div class="flex justify-between items-start ">
+                                <div class="space-y-2">
+                                    <h2 class="text-xl font-semibold text-gray-800 volkhov-regular">Cox's Bazaar Resort
+                                    </h2>
+                                    <p class="text-sm text-gray-600 flex items-center gap-1">
+                                        <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        400 m from beach
+                                    </p>
+                                    <p class="text-sm font-medium">Standard Quadruple Room</p>
+                                    <p class="text-sm text-gray-600">2 double beds</p>
+                                </div>
+
+                                <div class="text-right space-y-1">
+                                    <a href="tel:+8801234567890"
+                                        class="text-sm text-teal-500 hover:text-teal-600 flex items-center justify-end gap-1 volkhov-regular">
+                                        Contact Us : +880 1234567890
+                                    </a>
+                                    <div class="mt-4 pt-10">
+                                        <p class="text-sm text-gray-600">Starts from</p>
+                                        <p class="text-xl font-semibold volkhov-regular ">BDT 4,0000</p>
+                                        <p class="text-sm text-gray-600">1 night, per room</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-sm text-green-500 ">Breakfast included</p>
+                                    <p class="text-sm text-red-500 font-semibold">Only 3 rooms left at this price on our
+                                        site</p>
+                                </div>
+                                <div>
+                                    <button class="btn bg-black text-white mt-5">Edit Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class=" mx-auto my-5">
+                    <div
+                        class="flex flex-col md:flex-row bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                        <!-- Image Container -->
+                        <div class="md:w-72 w-full h-72 relative p-6">
+                            <img src="image/hotel 3.jfif" alt="Cox's Bazaar Resort Pool View"
+                                class="w-full h-full object-cover rounded-xl" />
+                        </div>
+
+                        <!-- Content Container -->
+                        <div class="flex-1 p-8 pt-12">
+                            <div class="flex justify-between items-start ">
+                                <div class="space-y-2">
+                                    <h2 class="text-xl font-semibold text-gray-800 volkhov-regular">Cox's Bazaar Resort
+                                    </h2>
+                                    <p class="text-sm text-gray-600 flex items-center gap-1">
+                                        <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                        400 m from beach
+                                    </p>
+                                    <p class="text-sm font-medium">Standard Quadruple Room</p>
+                                    <p class="text-sm text-gray-600">2 double beds</p>
+                                </div>
+
+                                <div class="text-right space-y-1">
+                                    <a href="tel:+8801234567890"
+                                        class="text-sm text-teal-500 hover:text-teal-600 flex items-center justify-end gap-1 volkhov-regular">
+                                        Contact Us : +880 1234567890
+                                    </a>
+                                    <div class="mt-4 pt-10">
+                                        <p class="text-sm text-gray-600">Starts from</p>
+                                        <p class="text-xl font-semibold volkhov-regular ">BDT 4,0000</p>
+                                        <p class="text-sm text-gray-600">1 night, per room</p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <div class="mt-4 space-y-2">
+                                    <p class="text-sm text-green-500 ">Breakfast included</p>
+                                    <p class="text-sm text-red-500 font-semibold">Only 3 rooms left at this price on our
+                                        site</p>
+                                </div>
+                                <div>
+                                    <button class="btn bg-black text-white mt-5">Edit Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
