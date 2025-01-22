@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- volkhob google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>visa request page</title>
+    <style>
+        .volkhov-regular {
+            font-family: "Volkhov", serif;
+            font-weight: 400;
+        }
+    </style>
+
+<body>
+    <!-- navbar  -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl"><img src="image/Bhubanmajhi_Logo.png" alt=""
+                    class="w-[100px] sm:mr-32 mr-10"></a>
+            <input type="text" placeholder=" Search" class="input input-bordered w-24 md:w-auto rounded-full " />
+        </div>
+        <div class=" gap-5 px-5">
+            <div class="w-10">
+                <img class="rounded-full" alt="Tailwind CSS Navbar component"
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+            <div>
+                <h2 class="text-base font-semibold ">Name </h2>
+                <p class="text-sm font-semibold ">Admin</p>
+            </div>
+        </div>
+    </div>
+    <!-- nav end -->
+
+    <div class="flex h-screen">
+        <aside class="w-64">
+            <div class="p-4">
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Dashboard</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Tour Packages</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Flight Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Hotel Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 bg-gray-100">
+                    <span>Visa Requests</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>To-Do</span>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 w-64 border-t">
+                <div class="p-4">
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Settings</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8">
+            <div class="flex justify-between">
+                <h1 class="text-3xl font-bold"><i class="fa-solid fa-arrow-left"></i> Visa Request List</h1>
+                <button class="btn bg-black text-white gap-2">
+                    <span class="text-lg">+</span>
+                    Add Visa Request
+                </button>
+            </div>
+            <div class="my-5 border rounded-lg">
+                <div class="overflow-x-auto bg-white rounded-lg shadow">
+                    <table class="table w-full">
+                        <thead>
+                            <tr class="bg-gray-50">
+                                <th class="text-left py-4 px-4">Name</th>
+                                <th class="text-left py-4 px-4">Phone Number</th>
+                                <th class="text-left py-4 px-4">Email Address</th>
+                                <th class="text-left py-4 px-4">Destination</th>
+                                <th class="text-left py-4 px-4">Visa type</th>
+                                <th class="text-left py-4 px-4">Status</th>
+                                <th class="text-left py-4 px-4">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t">
+                                <td class="py-3 px-4">Rahat Karim</td>
+                                <td class="py-3 px-4">+880-1711-234567</td>
+                                <td class="py-3 px-4">rahat.karim@gmail.com</td>
+                                <td class="py-3 px-4">United States</td>
+                                <td class="py-3 px-4">Tourist Visa</td>
+                                <td class="py-3 px-4"><span
+                                        class="px-3 py-1 rounded-full text-xs bg-green-100 text-green-800">Completed</span>
+                                </td>
+                                <td class="py-3 px-4">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-ghost btn-xs"><svg class="w-4 h-4" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                                </path>
+                                            </svg></button>
+                                        <button class="btn btn-ghost btn-xs text-red-500"><svg class="w-4 h-4"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                                </path>
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="py-3 px-4">Farhan Ahmed</td>
+                                <td class="py-3 px-4">+880-1722-345678</td>
+                                <td class="py-3 px-4">farhan.ahmed@xyz.com</td>
+                                <td class="py-3 px-4">Canada</td>
+                                <td class="py-3 px-4">Student Visa</td>
+                                <td class="py-3 px-4"><span
+                                        class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-800">Processing</span>
+                                </td>
+                                <td class="py-3 px-4">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-ghost btn-xs"><svg class="w-4 h-4" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                                </path>
+                                            </svg></button>
+                                        <button class="btn btn-ghost btn-xs text-red-500"><svg class="w-4 h-4"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                                </path>
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="py-3 px-4">Farhan Ahmed</td>
+                                <td class="py-3 px-4">+880-1722-345678</td>
+                                <td class="py-3 px-4">farhan.ahmed@xyz.com</td>
+                                <td class="py-3 px-4">Canada</td>
+                                <td class="py-3 px-4">Student Visa</td>
+                                <td class="py-3 px-4"><span
+                                        class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-800">Processing</span>
+                                </td>
+                                <td class="py-3 px-4">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-ghost btn-xs"><svg class="w-4 h-4" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                                </path>
+                                            </svg></button>
+                                        <button class="btn btn-ghost btn-xs text-red-500"><svg class="w-4 h-4"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                                </path>
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="py-3 px-4">Farhan Ahmed</td>
+                                <td class="py-3 px-4">+880-1722-345678</td>
+                                <td class="py-3 px-4">farhan.ahmed@xyz.com</td>
+                                <td class="py-3 px-4">Canada</td>
+                                <td class="py-3 px-4">Student Visa</td>
+                                <td class="py-3 px-4"><span
+                                        class="px-3 py-1 rounded-full text-xs bg-purple-100 text-purple-800">Processing</span>
+                                </td>
+                                <td class="py-3 px-4">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-ghost btn-xs"><svg class="w-4 h-4" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                                </path>
+                                            </svg></button>
+                                        <button class="btn btn-ghost btn-xs text-red-500"><svg class="w-4 h-4"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                                </path>
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="py-3 px-4">Habib Ahmed</td>
+                                <td class="py-3 px-4">+880-1722-345678</td>
+                                <td class="py-3 px-4">habib.ahmed@xyz.com</td>
+                                <td class="py-3 px-4">Canada</td>
+                                <td class="py-3 px-4">Student Visa</td>
+                                <td class="py-3 px-4"><span
+                                        class="px-3 py-1 rounded-full text-xs bg-red-100 text-red-800">Rejected</span>
+                                </td>
+                                <td class="py-3 px-4">
+                                    <div class="flex gap-2">
+                                        <button class="btn btn-ghost btn-xs"><svg class="w-4 h-4" fill="none"
+                                                stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
+                                                </path>
+                                            </svg></button>
+                                        <button class="btn btn-ghost btn-xs text-red-500"><svg class="w-4 h-4"
+                                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                                                </path>
+                                            </svg></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- More rows following same pattern -->
+                        </tbody>
+                    </table>
+                    <div class="flex items-center justify-between px-4 py-3 bg-gray-50">
+                        <div class="text-sm text-gray-700">Showing 1-09 of 78</div>
+                        <div class="flex gap-2">
+                            <button class="btn btn-ghost btn-sm">Previous</button>
+                            <button class="btn btn-ghost btn-sm">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
