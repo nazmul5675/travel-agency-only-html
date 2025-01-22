@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- volkhob google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>flight admin edit</title>
+    <style>
+        .volkhov-regular {
+            font-family: "Volkhov", serif;
+            font-weight: 400;
+        }
+    </style>
+
+<body>
+    <!-- navbar  -->
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl"><img src="image/Bhubanmajhi_Logo.png" alt=""
+                    class="w-[100px] sm:mr-32 mr-10"></a>
+            <input type="text" placeholder=" Search" class="input input-bordered w-24 md:w-auto rounded-full " />
+        </div>
+        <div class=" gap-5 px-5">
+            <div class="w-10">
+                <img class="rounded-full" alt="Tailwind CSS Navbar component"
+                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            </div>
+            <div>
+                <h2 class="text-base font-semibold ">Name </h2>
+                <p class="text-sm font-semibold ">Admin</p>
+            </div>
+        </div>
+    </div>
+    <!-- nav end -->
+
+    <div class="flex h-screen">
+        <aside class="w-64">
+            <div class="p-4">
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Dashboard</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 ">
+                    <span>Tour Packages</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1 bg-gray-100">
+                    <span>Flight Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Hotel Bookings</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>Visa Requests</span>
+                </div>
+                <div class="flex items-center gap-3 p-3 rounded-lg cursor-pointer mb-1">
+                    <span>To-Do</span>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 w-64 border-t">
+                <div class="p-4">
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Settings</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 cursor-pointer hover:bg-gray-50">
+                        <span>Logout</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-8">
+            <div class="flex justify-between">
+                <h1 class="text-3xl font-bold"><i class="fa-solid fa-arrow-left"></i> Available Flights</h1>
+                <button class="btn bg-black text-white gap-2">
+                    <span class="text-lg">+</span>
+                    Available Flights
+                </button>
+            </div>
+            <div>
+                <!-- Card 1 -->
+                <div class=" mx-auto my-4">
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <!-- Header with Contact -->
+                        <div class="flex justify-end mb-6">
+                            <a href="tel:+8801234567890" class="text-teal-500 hover:text-teal-600 text-lg">
+                                Call Us for Booking : +880 1234567890
+                            </a>
+                        </div>
+
+                        <!-- Flight Info Container -->
+                        <div class="flex items-center gap-8">
+                            <!-- Airline Info -->
+                            <div class="flex flex-col items-center gap-2 w-48">
+                                <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center">
+                                    <img src="image/35a51f46c205c52b2f5cd63f8571728f.png" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-gray-700 font-medium">Biman Bangladesh</p>
+                                    <p class="text-gray-700">Airlines</p>
+                                </div>
+                                <span class="text-gray-600 text-sm">Partially Refundable</span>
+                            </div>
+
+                            <!-- Flight Details -->
+                            <div class="flex-1 flex items-center justify-between">
+                                <!-- Departure -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Depart</p>
+                                    <p class="text-2xl font-bold">13 : 55</p>
+                                    <p class="text-gray-700">Thu, 30 Jan 2025</p>
+                                    <p class="text-gray-700 font-medium">Dhaka (DAC)</p>
+                                </div>
+
+                                <!-- Flight Duration -->
+                                <div class="flex flex-col items-center gap-2">
+                                    <p class="text-gray-600">1 hour 0 minute</p>
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-[2px] w-32 bg-gray-300"></div>
+                                        <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-600">Non Stop</p>
+                                </div>
+
+                                <!-- Arrival -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Arrive</p>
+                                    <p class="text-2xl font-bold">14 : 55</p>
+                                    <p class="text-gray-700">Thu, 30 Jan 2025</p>
+                                    <p class="text-gray-700 font-medium">Chittagong (CGP)</p>
+                                </div>
+
+                                <!-- Price -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Price</p>
+                                    <p class="text-2xl font-bold">BDT 4,000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="flex justify-end mt-6">
+                            <button
+                                class="px-4 py-2 bg-black hover:bg-gray-200 rounded-lg text-white font-medium flex items-center gap-2">
+                                Edit Details
+                                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class=" mx-auto my-4">
+                    <div class="bg-white rounded-lg border border-gray-200 p-6">
+                        <!-- Header with Contact -->
+                        <div class="flex justify-end mb-6">
+                            <a href="tel:+8801234567890" class="text-teal-500 hover:text-teal-600 text-lg">
+                                Call Us for Booking : +880 1234567890
+                            </a>
+                        </div>
+
+                        <!-- Flight Info Container -->
+                        <div class="flex items-center gap-8">
+                            <!-- Airline Info -->
+                            <div class="flex flex-col items-center gap-2 w-48">
+                                <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center">
+                                    <img src="image/35a51f46c205c52b2f5cd63f8571728f.png" alt="">
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-gray-700 font-medium">Biman Bangladesh</p>
+                                    <p class="text-gray-700">Airlines</p>
+                                </div>
+                                <span class="text-gray-600 text-sm">Partially Refundable</span>
+                            </div>
+
+                            <!-- Flight Details -->
+                            <div class="flex-1 flex items-center justify-between">
+                                <!-- Departure -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Depart</p>
+                                    <p class="text-2xl font-bold">13 : 55</p>
+                                    <p class="text-gray-700">Thu, 30 Jan 2025</p>
+                                    <p class="text-gray-700 font-medium">Dhaka (DAC)</p>
+                                </div>
+
+                                <!-- Flight Duration -->
+                                <div class="flex flex-col items-center gap-2">
+                                    <p class="text-gray-600">1 hour 0 minute</p>
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-[2px] w-32 bg-gray-300"></div>
+                                        <svg class="w-4 h-4 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </div>
+                                    <p class="text-gray-600">Non Stop</p>
+                                </div>
+
+                                <!-- Arrival -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Arrive</p>
+                                    <p class="text-2xl font-bold">14 : 55</p>
+                                    <p class="text-gray-700">Thu, 30 Jan 2025</p>
+                                    <p class="text-gray-700 font-medium">Chittagong (CGP)</p>
+                                </div>
+
+                                <!-- Price -->
+                                <div class="space-y-2">
+                                    <p class="text-gray-600">Price</p>
+                                    <p class="text-2xl font-bold">BDT 4,000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="flex justify-end mt-6">
+                            <button
+                                class="px-4 py-2 bg-black hover:bg-gray-200 rounded-lg text-white font-medium flex items-center gap-2">
+                                Edit Details
+                                <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
