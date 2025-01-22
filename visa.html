@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- daisy ui cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- volkhob google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Bhuban Majhi</title>
+    <style>
+        .volkhov-regular {
+            font-family: "Volkhov", serif;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- navbar section start from here -->
+    <nav>
+        <div class="navbar bg-transparent backdrop-blur px-4 md:px-8">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a class="font-semibold">Hotels</a></li>
+                        <li><a class="font-semibold">Flight</a></li>
+                        <li><a class="font-semibold">Tour</a></li>
+                        <li><a class="font-semibold">Visa</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl"><img src="image/Bhubanmajhi_Logo.png" alt="Bhuban Majhi Travel Logo"
+                        class="lg:w-28 w-20"></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-semibold">Hotels</a></li>
+                    <li><a class="font-semibold">Flight</a></li>
+                    <li><a class="font-semibold">Tour</a></li>
+                    <li><a class="font-semibold">Visa</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn bg-[#1E2022] font-semibold text-white border-none">Sign In</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- Country Selection -->
+    <div class="flex justify-between items-center gap-4 max-w-6xl mx-auto p-6">
+        <select class="w-full p-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+            <option>Thailand</option>
+            <option>Thailand</option>
+            <option>Thailand</option>
+        </select>
+        <button class=" btn  bg-gray-900 text-white  hover:bg-gray-800">
+            <i class="fa-solid fa-magnifying-glass"></i> Modify Search
+        </button>
+    </div>
+    <div class="max-w-6xl mx-auto p-6">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left Column -->
+            <div class="lg:w-2/3 space-y-8">
+
+
+                <!-- Summary Section -->
+                <div class="space-y-6">
+                    <h2 class="text-xl font-semibold">Summary</h2>
+                    <div class="space-y-4">
+                        <div class="flex gap-2">
+                            <span class="font-medium">Visa Type:</span>
+                            <span>Tourist Visa (e-visa)</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-medium">Processing Time:</span>
+                            <span>5 to 7 working days (from the date of submission)</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="font-medium">Our Processing Fee:</span>
+                            <span>BDT 6,000</span>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-700">You can contact with us for a free Visa consultation with our travel
+                        experts and get started on your application.</p>
+
+                    <div class="space-y-2">
+                        <p class="font-medium">For online support, please contact our 24/7 hotline number:</p>
+                        <p>+88 09678 332211</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Documents Section -->
+                <div class="space-y-6">
+                    <h2 class="text-xl font-semibold">List Of Documents Needed</h2>
+                    <ul class="space-y-4 list-disc pl-5">
+                        <li>Current Passport Bio-page clear scan copy.</li>
+                        <li>Recently taken 2 copies 35mm*45mm photographs with white background (Matt Paper) and without
+                            border. Please note, photographs should not be more than 3 months old and should not be used
+                            in any of the previous visas.</li>
+                        <li>Two active phone numbers of applicant and an e-mail address are required.</li>
+                        <li>Name, phone number and address of local guarantor.</li>
+                        <li>Proof of occupation (given below based on specific occupation).</li>
+                        <li>Proof of finance: Bank statement of last 6 months and bank solvency certificate.</li>
+                        <li>Round trip air ticket booking copy.</li>
+                        <li>First applicant can sponsor father, mother, spouse and children.</li>
+                        <li>For documents in other foreign languages (including Bengali) must be translated into English
+                            and shall be certified by a credible translator and a notary public.</li>
+                        <li>If married couple are travelling together and spouse name does not appear in the passport,
+                            notary translated Nikah Nama and notarized Marriage Certificates are required with
+                            photocopy.</li>
+                        <li>If minor is traveling with one parent, consent letter from another parent is required.</li>
+                        <li>In case of minor traveling with family notarized birth certificate is required.</li>
+                    </ul>
+                </div>
+                <div class="max-w-6xl mx-auto ">
+                    <h2 class="text-gray-800 font-medium mb-4">Additional documents are needed based on your occupation
+                        :</h2>
+
+                    <!-- Private Service Holder -->
+                    <div class="space-y-6">
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for private service holder :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>NOC from employer (authorized person number must be included in the NOC).</li>
+                                <li>Office ID copy (front side and backside photocopy in one page).</li>
+                                <li>Visiting card 2 copies.</li>
+                                <li class="leading-relaxed">Last 6 months bank statements of salary account and bank
+                                    solvency certificate are required. If salary account can not be provided, monthly
+                                    salary certificate and salary pay slips of last 3 months also needed.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Business Person -->
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for business person :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Valid trade license clear photocopy and original notary translated copy required.
+                                </li>
+                                <li>Visiting card 2 copies.</li>
+                                <li>Business letter pad 2 copies</li>
+                                <li>Bank statements of last 6 months and bank solvency certificate.</li>
+                                <li>Memorandum of article for limited company if the applicant name is not mentioned in
+                                    the trade license.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Retired Person -->
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for retired person :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Copy of retirement certificate (if in Bengali notary translated copy needed with
+                                    photocopy).</li>
+                                <li>Bank statements of last 6 months and bank solvency certificate.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Lawyer -->
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for lawyer :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Bar council certificate or leave letter from a law firm.</li>
+                                <li>Office ID copy (front side and backside photocopy in one page).</li>
+                                <li>Visiting card 2 copies.</li>
+                                <li>Bank statements of last 6 months and bank solvency certificate.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Doctor -->
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for doctor :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>BMDC certificate or leave letter from hospital.</li>
+                                <li>Office ID copy (front side and backside photocopy in one page).</li>
+                                <li>Visiting card 2 copies.</li>
+                                <li>Bank statements of last 6 months and bank solvency certificate.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Student -->
+                        <div class="space-y-3">
+                            <h3 class="text-gray-700 font-medium">Requirements for student :</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                <li>Student ID copy (front side and backside photocopy in one page) or a recommendation
+                                    letter from the educational institution.</li>
+                                <li>Sponsorship letter from his or her sponsor.</li>
+                                <li>Bank Statements of last 6 months and bank solvency certificate of sponsor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Form -->
+            <div class="lg:w-1/3">
+                <div class="bg-white p-6 rounded-lg border border-gray-200">
+                    <h2 class="text-xl font-semibold mb-4">Looking for Expert Visa Guidance?</h2>
+                    <p class="text-gray-600 mb-6">Please share your contact information. Our team will get in touch with
+                        you shortly.</p>
+
+                    <form class="space-y-4">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium">Name</label>
+                            <input type="text" placeholder="You have to write your stupid name here"
+                                class="w-full p-2.5 border border-gray-300 rounded-lg" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium">Phone Number</label>
+                            <input type="tel" placeholder="+880 1234567890"
+                                class="w-full p-2.5 border border-gray-300 rounded-lg" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium">Email Address</label>
+                            <input type="email" placeholder="emailaddress@example.com"
+                                class="w-full p-2.5 border border-gray-300 rounded-lg" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium">Destination Country</label>
+                            <input type="text" placeholder="Now Enter your destination country"
+                                class="w-full p-2.5 border border-gray-300 rounded-lg" />
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium">Visa Type</label>
+                            <input type="text" placeholder="Tourist"
+                                class="w-full p-2.5 border border-gray-300 rounded-lg" />
+                        </div>
+
+                        <button type="submit"
+                            class="w-full px-4 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-[#15253E] text-gray-300 py-12 mx-auto">
+        <div class="container mx-auto  px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Language & Currency Section -->
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-white mb-3">Language</h3>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-[#1C2E4A] text-gray-300 py-2 px-3 pr-8 rounded appearance-none focus:outline-none">
+                                <option>🇬🇧 English (UK)</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white mb-3">Currency</h3>
+                        <div class="relative">
+                            <select
+                                class="w-full bg-[#1C2E4A] text-gray-300 py-2 px-3 pr-8 rounded appearance-none focus:outline-none">
+                                <option>BDT</option>
+                            </select>
+                            <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                                    <path
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Section -->
+                <div>
+                    <h3 class="text-white mb-3">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white">Terms and conditions</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+                        <li><a href="#" class="hover:text-white">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Need Help Section -->
+                <div>
+                    <h3 class="text-white mb-3">Need Help?</h3>
+                    <p class="text-sm">We're here for you 24/7! Reach out to us through Messenger or call anytime, day
+                        or night, for the support you need.</p>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-white mb-3">Contact</h3>
+                    <ul class="space-y-2 mb-6">
+                        <li>info@agencyYNam.com</li>
+                        <li>+880 XXXXXXXXX</li>
+                    </ul>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-[#1877F2] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#1DA1F2] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#E4405F] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-[#E60023] w-8 h-8 rounded-full flex items-center justify-center hover:opacity-90">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0a12 12 0 0 0-4.373 23.178c-.067-.595-.123-1.508.026-2.158.136-.592.878-3.764.878-3.764s-.224-.448-.224-1.11c0-1.041.604-1.82 1.357-1.82.639 0 .948.48.948 1.055 0 .642-.409 1.603-.62 2.493-.176.743.374 1.348 1.111 1.348 1.333 0 2.357-1.407 2.357-3.44 0-1.798-1.293-3.053-3.138-3.053-2.137 0-3.396 1.602-3.396 3.258 0 .645.249 1.335.558 1.715.061.074.07.14.052.268l-.207.818c-.033.123-.108.15-.25.09-0.93-.428-1.514-1.77-1.514-2.854 0-2.368 1.72-4.545 4.962-4.545 2.606 0 4.627 1.86 4.627 4.34 0 2.595-1.636 4.68-3.907 4.68-.764 0-1.483-.396-1.73-.867l-.47 1.794c-.171.657-.632 1.48-.942 1.983A12.002 12.002 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Copyright -->
+    <div class=" bg-[#0c1624] p-5 text-gray-100 w-full text-center text-sm items-center">
+        <p>Copyright 2025 Bhuban Majhi. All Rights Reserved</p>
+    </div>
+    </div>
+</body>
+
+</html>
